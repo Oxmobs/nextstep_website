@@ -2,21 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Next Step</title>
+    <!-- Responsive meta tag ensures the layout adapts to mobile screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descriptive title and meta description for better SEO -->
+    <title>Next Step – Empower your journey</title>
+    <meta name="description" content="Next Step is a platform to help you take your next step with ease. Learn more about our mission and features.">
+    <!-- Link to the stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Next Step!</h1>
+    <!-- Site header with a logo and responsive navigation -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Next Step</h1>
+            <!-- Toggle button appears on mobile viewports to open/close the menu -->
+            <button class="nav-toggle" data-mobile-nav-toggle aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>☰
+            </button>
+            <!-- Primary navigation menu; the data attribute hooks into the JavaScript for mobile toggling -->
+            <nav id="primary-navigation" class="site-nav" data-mobile-nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <p>This is your starting point for building the Next Step website.</p>
-        <button onclick="showMessage()">Click me!</button>
-        <p id="message"></p>
+    <main class="site-main container">
+        <!-- Hero section introduces the project and invites users to interact -->
+        <section class="hero">
+            <h2>Welcome to Next Step!</h2>
+            <p>Your starting point for building the Next Step website.</p>
+            <!-- The CTA button triggers a message below when clicked -->
+            <button class="cta-button" onclick="showMessage()">Click me!</button>
+            <!-- ARIA live region communicates updates from JavaScript to assistive technologies -->
+            <p id="message" aria-live="polite"></p>
+        </section>
+        <!-- About section: replace this placeholder text with real project information -->
+        <section id="about">
+            <h3>About Next Step</h3>
+            <p>Next Step is an initiative to help you move forward with your ideas. Use this template as a foundation and expand upon it with your own content.</p>
+        </section>
+        <!-- Contact section: update contact details as needed -->
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <p>Email us at <a href="mailto:info@example.com">info@example.com</a> for more information.</p>
+        </section>
     </main>
-    <footer>
-        <small>&copy; 2025 Next Step</small>
+    <!-- Site footer with copyright information -->
+    <footer class="site-footer">
+        <div class="container">
+            <small>&copy; 2025 Next Step. All rights reserved.</small>
+        </div>
     </footer>
+    <!-- JavaScript for interactions and responsive navigation -->
     <script src="js/main.js"></script>
 </body>
 </html>
