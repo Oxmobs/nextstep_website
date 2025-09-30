@@ -72,3 +72,23 @@ if (navigation) {
         }
     }
 }
+
+// Reveal sections when they enter the viewport
+
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('main section');
+  if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+  } else {
+    // Fallback for browsers without IntersectionObserver
+    sections.forEach(section => section.classList.add('visible'));
+  }
+});
