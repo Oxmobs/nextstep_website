@@ -1,82 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Next Step – Empower Your Journey</title>
-  <meta name="description" content="Next Step is a platform to help you take your next step with ease.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Next Step</h1>
-      <button class="mobile-nav-toggle" data-mobile-nav-toggle aria-controls="primary-navigation" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-        <span class="hamburger"></span>
-      </button>
-      <nav id="primary-navigation" class="site-nav" data-mobile-nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Next Step – Turn vague tasks into clear actions. A productivity app that transforms unclear reminders into actionable next steps, integrated with Apple Reminders."
+    />
+    <title>Next Step – Turn Vague Tasks into Clear Actions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <div class="logo">Next Step</div>
+        <button class="nav-toggle" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
           <li><a href="#features">Features</a></li>
+          <li><a href="#problem">Problem &amp; Solution</a></li>
+          <li><a href="#trust">Why Next Step</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
-  <main>
-    <section class="hero" id="home">
-      <div class="container">
-        <h2>Your Next Step Starts Here</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet arcu quis mauris scelerisque venenatis.</p>
-        <button class="cta-button" onclick="showMessage()">Get Started</button>
-      </div>
-    </section>
-    <section class="features" id="features">
-      <div class="container">
-        <h3>Our Features</h3>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h4>Feature One</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam lorem nec sagittis finibus.</p>
-          </article>
-          <article class="feature-card">
-            <h4>Feature Two</h4>
-            <p>Mauris cursus, augue ac faucibus venenatis, lectus velit lacinia nulla, quis pulvinar dolor massa eget nibh.</p>
-          </article>
-          <article class="feature-card">
-            <h4>Feature Three</h4>
-            <p>Curabitur pulvinar, arcu nec tristique dapibus, urna justo vehicula eros, a interdum sapien augue sed ante.</p>
-          </article>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>Turn Vague Tasks into Clear Actions</h1>
+            <p>
+              Productivity app that transforms unclear reminders into actionable
+              next steps.
+            </p>
+            <div class="hero-ctas">
+              <a href="#" class="btn primary-btn">Join Early Access</a>
+              <a href="#" class="btn secondary-btn"
+                >Download for iOS &amp; macOS</a
+              >
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <h2>Core Features</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>Daily Clarity</h3>
+              <p>
+                Curated tasks grouped by urgency—urgent, next, someday, and
+                inbox—to help you focus on what matters.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>AI Smart Edit</h3>
+              <p>
+                Transform vague reminders into specific, achievable actions using
+                on‑device intelligence.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Streamlined Workflow</h3>
+              <p>
+                One‑tap snooze for short, medium, or long deferrals, quick
+                completion, and flexible hashtags for organization.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h3>Privacy First</h3>
+              <p>
+                Works locally with Apple Reminders so your data stays on your
+                device; AI features are opt‑in.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem-solution" id="problem">
+        <div class="container problem-solution-content">
+          <div class="problem">
+            <h2>The Problem</h2>
+            <p>
+              Most reminders are too vague—creating stress, indecision, and
+              stalled progress. When tasks lack clarity, it's hard to know
+              where to start or what to do next.
+            </p>
+          </div>
+          <div class="solution">
+            <h2>Our Solution</h2>
+            <p>
+              Next Step turns unclear to‑dos into clear actions. By
+              integrating seamlessly with Apple Reminders and using
+              on‑device intelligence, it transforms “Work on project” into
+              specific, actionable next steps.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust" id="trust">
+        <div class="container">
+          <h2>Why Next Step?</h2>
+          <div class="trust-grid">
+            <div class="trust-item">
+              <h3>Native Integration</h3>
+              <p>
+                Built directly on Apple Reminders for a seamless experience.
+              </p>
+            </div>
+            <div class="trust-item">
+              <h3>Privacy Assurance</h3>
+              <p>
+                All processing happens on your device; no data leaves without
+                consent.
+              </p>
+            </div>
+            <div class="trust-item">
+              <h3>Cross‑Platform</h3>
+              <p>
+                Available on iOS and macOS with a consistent, native
+                interface.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h2>What People Are Saying</h2>
+          <div class="testimonials-grid">
+            <blockquote>
+              <p>
+                “Next Step keeps my projects moving without overwhelming me.”
+              </p>
+              <footer>— Alex, Product Manager</footer>
+            </blockquote>
+            <blockquote>
+              <p>
+                “It’s the missing link between my reminders and actually
+                getting things done.”
+              </p>
+              <footer>— Jamie, Student</footer>
+            </blockquote>
+            <blockquote>
+              <p>
+                “Love the privacy‑first approach and how simple it makes task
+                management.”
+              </p>
+              <footer>— Taylor, Designer</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2>Get in Touch</h2>
+          <p>Have questions or want to share feedback? We’d love to hear from you.</p>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your Name"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your@example.com"
+            />
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="How can we help you?"
+            ></textarea>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>&copy; 2025 Next Step. All rights reserved.</p>
+        <nav class="footer-nav">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <a href="#">Twitter</a>
+          <a href="#">Give Feedback</a>
+        </nav>
       </div>
-    </section>
-    <section class="about" id="about">
-      <div class="container">
-        <h3>About Us</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis, augue nec scelerisque tempus, ipsum orci auctor justo, at volutpat neque enim vel magna. Integer hendrerit massa vel risus vestibulum, quis fringilla eros finibus.</p>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="container">
-        <h3>Contact Us</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim eros vitae quam imperdiet, a scelerisque augue molestie.</p>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" rows="4" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 Next Step. All rights reserved.</p>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
-</body>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
