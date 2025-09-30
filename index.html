@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!-- Responsive meta tag ensures the layout adapts to mobile screens -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Descriptive title and meta description for better SEO -->
-    <title>Next Step – Empower your journey</title>
-    <meta name="description" content="Next Step is a platform to help you take your next step with ease. Learn more about our mission and features.">
-    <!-- Link to the stylesheet -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Step – Empower Your Journey</title>
+  <meta name="description" content="Next Step is a platform to help you take your next step with ease.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Site header with a logo and responsive navigation -->
-    <header class="site-header">
-        <div class="container">
-            <h1 class="logo">Next Step</h1>
-            <!-- Toggle button appears on mobile viewports to open/close the menu -->
-            <button class="nav-toggle" data-mobile-nav-toggle aria-controls="primary-navigation" aria-expanded="false">
-                <span class="sr-only">Menu</span>☰
-            </button>
-            <!-- Primary navigation menu; the data attribute hooks into the JavaScript for mobile toggling -->
-            <nav id="primary-navigation" class="site-nav" data-mobile-nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Next Step</h1>
+      <button class="mobile-nav-toggle" data-mobile-nav-toggle aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-navigation" class="site-nav" data-mobile-nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <h2>Your Next Step Starts Here</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet arcu quis mauris scelerisque venenatis.</p>
+        <button class="cta-button" onclick="showMessage()">Get Started</button>
+      </div>
+    </section>
+    <section class="features" id="features">
+      <div class="container">
+        <h3>Our Features</h3>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h4>Feature One</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam lorem nec sagittis finibus.</p>
+          </article>
+          <article class="feature-card">
+            <h4>Feature Two</h4>
+            <p>Mauris cursus, augue ac faucibus venenatis, lectus velit lacinia nulla, quis pulvinar dolor massa eget nibh.</p>
+          </article>
+          <article class="feature-card">
+            <h4>Feature Three</h4>
+            <p>Curabitur pulvinar, arcu nec tristique dapibus, urna justo vehicula eros, a interdum sapien augue sed ante.</p>
+          </article>
         </div>
-    </header>
-    <main class="site-main container">
-        <!-- Hero section introduces the project and invites users to interact -->
-        <section class="hero">
-            <h2>Welcome to Next Step!</h2>
-            <p>Your starting point for building the Next Step website.</p>
-            <!-- The CTA button triggers a message below when clicked -->
-            <button class="cta-button" onclick="showMessage()">Click me!</button>
-            <!-- ARIA live region communicates updates from JavaScript to assistive technologies -->
-            <p id="message" aria-live="polite"></p>
-        </section>
-        <!-- About section: replace this placeholder text with real project information -->
-        <section id="about">
-            <h3>About Next Step</h3>
-            <p>Next Step is an initiative to help you move forward with your ideas. Use this template as a foundation and expand upon it with your own content.</p>
-        </section>
-        <!-- Contact section: update contact details as needed -->
-        <section id="contact">
-            <h3>Contact Us</h3>
-            <p>Email us at <a href="mailto:info@example.com">info@example.com</a> for more information.</p>
-        </section>
-    </main>
-    <!-- Site footer with copyright information -->
-    <footer class="site-footer">
-        <div class="container">
-            <small>&copy; 2025 Next Step. All rights reserved.</small>
-        </div>
-    </footer>
-    <!-- JavaScript for interactions and responsive navigation -->
-    <script src="js/main.js"></script>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis, augue nec scelerisque tempus, ipsum orci auctor justo, at volutpat neque enim vel magna. Integer hendrerit massa vel risus vestibulum, quis fringilla eros finibus.</p>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h3>Contact Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim eros vitae quam imperdiet, a scelerisque augue molestie.</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Next Step. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
